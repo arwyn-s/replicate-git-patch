@@ -1,0 +1,29 @@
+[project]
+name = "pr-workflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gitpython>=3.1.45",
+    "rich>=14.2.0",
+]
+[project.scripts]
+pr_workflow = "main:main"
+[tool.basedpyright]
+venvPath = "."
+venv = ".venv"
+reportAny = "none"
+reportUnusedCallResult = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportUnknownParameterType = "none"
+reportMissingTypeStubs = "none"
+reportGeneralTypeIssues = "none"
+reportOptionalMemberAccess = "warning"
+reportPrivateImportUsage = "none"
+reportUndefinedVariable = "error"
+reportAttributeAccessIssue = "warning"
+reportUnusedVariable = "hint"
+reportUnusedImport = "hint"
